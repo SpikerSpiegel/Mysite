@@ -8,6 +8,7 @@ body {
   background-color: black;
 }
 
+/* Nav Bar*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -74,6 +75,8 @@ nav {
   opacity: 0%;
 }
 
+.nav-links li:hover {}
+
 .burger {
   display: block;
 }
@@ -121,6 +124,13 @@ nav {
   margin-top: 0.5rem;
 }
 
+/*Music*/
+.spotify {
+  display: flex;
+  justify-content: center;
+}
+
+
 /*forum*/
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,900);
@@ -134,7 +144,7 @@ html {
 }
 
 body {
-  background: #858d98;
+  background: black;
   /* Old browsers */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='black', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -218,9 +228,9 @@ body {
 
 #contact-wrap {
   font-family: 'Lato', calibri, arial;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
-  width: 70%;
+  width: 21rem;
   color: #fff;
   overflow: auto;
   float: left;
@@ -229,8 +239,7 @@ body {
 
 #contact-area {
   margin-left: 3px;
-  width: 80%;
-
+  width: 20rem;
   padding: 20px;
 }
 
