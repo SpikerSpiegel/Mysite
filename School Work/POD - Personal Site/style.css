@@ -164,15 +164,18 @@ body {
 
 
 #container {
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  margin: 14rem;
-
+  margin: 8rem auto 0;
+  width: 50rem;
+  height: 25rem;
+}
+#container::after{
+  content: ' ';
+  clear: both;
 }
 
+
 #demo {
-  width: 300px;
+  width: 42%;
   font-family: 'Lato', calibri, arial;
   font-size: 14px;
   font-weight: 300;
@@ -181,7 +184,6 @@ body {
   background: none;
   overflow: auto;
   float: left;
-  margin-left: 40px;
   color: #fff;
 }
 
@@ -220,18 +222,17 @@ body {
   font-family: 'Lato', calibri, arial;
   font-size: 16px;
   font-weight: 300;
-  width: 70%;
+  width: 58%;
   color: #fff;
   overflow: auto;
-  float: left;
+  float: right;
 
 }
 
 #contact-area {
-  margin-left: 3px;
-  width: 80%;
-
+  width: 100%;
   padding: 20px;
+  float: right;
 }
 
 #contact-area input,
@@ -336,4 +337,36 @@ label {
   color: #fff;
 
   font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  #container{
+    width: 80%;
+  }
+
+  #demo{
+    padding-left:0;
+  }
+
+  #demo, #contact-wrap{
+    clear: both;
+    width:100%;
+    float: none;
+  }
+
+  #contact-wrap{
+    margin-top:2rem;
+  }
+
+  #contact-area{
+    width: 90%;
+    float: none;
+    padding-left:0;
+  }
+
+  #contact-area input.submit-button{
+    width: 10rem;
+    float: none;
+  }
 }
