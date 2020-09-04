@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+  font-family: "Major Mono Display", monospace;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  position: absolute;
+  right: 0px;
+  height: 92vh;
+  top: 8vh;
+  color: white;
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 115px 0px 0px 0px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+.nav-links li {
+  opacity: 0%;
+}
+
+.burger {
+  display: block;
+}
+
+.nav-active {
+  transform: translateX(0%);
+  display: flex;
+  width: 100%;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.mix {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.burger:hover div {
+  transition: ease-in-out 0.5s;
+  position: relative;
+  margin-top: 0.5rem;
+}
