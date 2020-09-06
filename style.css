@@ -4,9 +4,7 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: black;
-}
+body
 
 /* Nav Bar*/
 nav {
@@ -128,7 +126,6 @@ nav {
 
 .toggle .line3 {
 	transform: rotate(45deg) translate(-0.35rem, -0.4rem);
-
 	transition: ease-in-out 0.4s;
 }
 
@@ -147,7 +144,6 @@ nav {
 
 /*IMG*/
 
-.picture {}
 
 /*Music*/
 .spotify {
