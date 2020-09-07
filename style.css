@@ -4,13 +4,22 @@
 	box-sizing: border-box;
 }
 
-body
+body {
+	background-color: black;
+}
+
+body.home-page {
+	background-image: url("img/djme.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -15rem;
+}
 
 /* Nav Bar*/
 nav {
 	display: flex;
 	justify-content: space-between;
-	margin: 0rem 3rem 0rem 3rem;
+	margin: 0rem 0rem 0rem 0rem;
 	align-items: center;
 	min-height: 8vh;
 	background-color: black;
@@ -18,6 +27,7 @@ nav {
 }
 
 .logo {
+	padding: 0rem 0rem 0rem 3rem;
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -57,30 +67,22 @@ nav {
 }
 
 .burger {
+	margin: 0rem 3rem 0rem 0rem;
 	display: block;
-	width: 25px;
+	width: 1.7rem;
 	cursor: pointer;
-
 }
 
 .burger div {
-	padding: 0;
-	margin: 0;
 	width: auto;
 	height: 3px;
 	margin-bottom: 5px;
 	background-color: white;
-
-}
-
-.burger>.line3 {
-	margin-bottom: 0;
 }
 
 .nav-links li {
 	opacity: 0%;
 }
-
 
 .nav-active {
 	transform: translateX(0%);
@@ -108,16 +110,11 @@ nav {
 
 .toggle {
 	height: 25px;
-
-
 }
 
-
 .toggle .line1 {
-
 	transform: rotate(-45deg) translate(-0.5rem, 0.4rem);
 	transition: ease-in-out 0.4s;
-
 }
 
 .toggle .line2 {
@@ -129,21 +126,7 @@ nav {
 	transition: ease-in-out 0.4s;
 }
 
-/*
-.burger:hover .line1 {
-	margin-bottom: 0.4rem;
-}
-
-
-.burger:hover .line3 {
-	margin-top: 0.4rem;
-}
-*/
-
-
-
 /*IMG*/
-
 
 /*Music*/
 .spotify {
@@ -161,32 +144,6 @@ nav {
 
 html {
 	height: 100%;
-}
-
-body {
-	background: black;
-	/* Old browsers */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='black', GradientType=1);
-	/* IE6-9 fallback on horizontal gradient */
-
-	background: -moz-radial-gradient(top, ellipse cover, black 1%, black 99%);
-	/* FF3.6+ */
-	background: -webkit-gradient(radial,
-			top top,
-			0px,
-			top top,
-			100%,
-			color-stop(1%, black),
-			color-stop(99%, black));
-	/* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(top, ellipse cover, black 1%, black 99%);
-	/* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(top, ellipse cover, black 1%, black 99%);
-	/* Opera 12+ */
-	background: -ms-radial-gradient(top, ellipse cover, black 1%, black 99%);
-	/* IE10+ */
-	background: radial-gradient(ellipse at top, black 1%, black 99%);
-	/* W3C */
 }
 
 .dim:hover {
