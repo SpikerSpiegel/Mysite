@@ -9,6 +9,7 @@ body {
 }
 
 body.home-page {
+	filter: grayscale(0%);
 	background-image: url("img/djme.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
