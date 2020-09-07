@@ -14,7 +14,6 @@ body.home-page {
 	background-size: cover;
 	background-position-y: -15rem;
 	background-position-y: center;
-
 }
 
 /* Nav Bar*/
@@ -71,14 +70,17 @@ nav {
 .burger {
 	margin: 0rem 3rem 0rem 0rem;
 	display: block;
-	width: 1.7rem;
+	width: 1.8rem;
 	cursor: pointer;
+
+
 }
 
 .burger div {
 	width: auto;
-	height: 3px;
-	margin-bottom: 5px;
+	height: 0.2rem;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
 	background-color: white;
 }
 
@@ -115,7 +117,7 @@ nav {
 }
 
 .toggle .line1 {
-	transform: rotate(-45deg) translate(-0.5rem, 0.4rem);
+	transform: rotate(-45deg) translate(-4px, 4px);
 	transition: ease-in-out 0.4s;
 }
 
@@ -124,7 +126,7 @@ nav {
 }
 
 .toggle .line3 {
-	transform: rotate(45deg) translate(-0.35rem, -0.4rem);
+	transform: rotate(45deg) translate(-9px, -9px);
 	transition: ease-in-out 0.4s;
 }
 
