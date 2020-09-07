@@ -9,7 +9,7 @@ body {
 }
 
 body.home-page {
-	background-image: url("./img/djme.jpg");
+	background-image: url("IMG/djme.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-y: -15rem;
