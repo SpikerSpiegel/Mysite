@@ -19,11 +19,15 @@ body.home-page {
 
 /*Remember Overly*/
 
-body.home-page::after {
-	content: ' ';
-	background: rgba(0, 0, 0, 0.5);
-	width: 100%;
+body.home-image::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
 	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100% 100%;
 	z-index: 2;
 }
 
@@ -31,7 +35,6 @@ body.home-page::after {
 nav {
 	display: flex;
 	justify-content: space-between;
-	margin: 0rem 0rem 0rem 0rem;
 	align-items: center;
 	min-height: 8vh;
 	background-color: black;
@@ -145,12 +148,66 @@ nav {
 	transition: ease-in-out 0.4s;
 }
 
-/*IMG*/
+/* Fix Music Content*/
 
 /*Music*/
+
 .spotify {
 	display: flex;
 	justify-content: center;
+	margin: 10em 0em 0em 0em;
+}
+
+.player {
+	align-items: center;
+}
+
+/* Footer*/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 2.2em;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+.footer-icons {
+	padding: 0.4rem 0rem 0rem 0rem;
+	justify-content: center;
+	display: flex;
+	list-style: none;
+}
+
+.RA {
+	margin: 0.25rem 0rem 0rem 1rem;
+	width: 2.5rem;
+	height: auto;
+}
+
+.Insta {
+	margin: 0rem 0rem 0rem 1rem;
+	width: 1.5rem;
+	height: auto;
+}
+
+.facebook {
+	margin: 0rem 0rem 0rem 1rem;
+	width: 1.5rem;
+	height: auto;
+}
+
+.soundcloud {
+	margin: 0rem 0rem 0rem 1rem;
+	width: 1.5rem;
+	height: auto;
+}
+
+.spotifyicon {
+	margin: 0rem 0rem 0rem 1rem;
+	width: 1.5rem;
+	height: auto;
 }
 
 /*forum*/
@@ -342,7 +399,7 @@ label {
 
 @media only screen and (max-width: 1080px) {
 	.logo {
-		padding: 0rem 0rem 0rem 5rem
+		padding: 0rem 0rem 0rem 5rem;
 	}
 
 	.burger {
