@@ -38,6 +38,8 @@ nav {
 	min-height: 8vh;
 	background-color: black;
 	font-family: "Major Mono Display", monospace;
+	position: relative;
+	z-index: 10;
 }
 
 .logo {
@@ -158,14 +160,12 @@ main .grid {
 	/* autoprefixer: off */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-	grid-auto-rows: inherit;
+	grid-auto-rows: ;
 	grid-auto-flow: dense;
-	clip-path: polygon(
-		10px 6px,
-		calc(100% - 7px) 6px,
-		calc(100% - 7px) calc(100% - 6px),
-		10px calc(100% - 6px)
-	);
+	clip-path: polygon(10px 6px,
+			calc(100% - 7px) 6px,
+			calc(100% - 7px) calc(100% - 6px),
+			10px calc(100% - 6px));
 	overflow: hidden;
 	list-style: none;
 }
@@ -589,6 +589,5 @@ label {
 }
 
 @media (min-width: 940px) {
-	main {
-	}
+	main {}
 }
