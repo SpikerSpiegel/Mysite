@@ -322,6 +322,8 @@ main .grid {
 	width: 100%;
 	background-color: black;
 	color: white;
+	position: relative;
+	z-index: 10;
 }
 
 .footer-icons {
