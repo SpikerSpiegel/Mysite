@@ -10,8 +10,18 @@ body {
   margin: 0;
 }
 
+.textInfo {
+  color: white;
+
+  font-size: 3vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Major Mono Display', monospace;
+}
+
 body.home-page {
-  background-image: url('./IMG/berlin.jpg');
+  /* background-image: url('./IMG/berlin.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -15rem;
